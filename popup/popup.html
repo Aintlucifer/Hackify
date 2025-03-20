@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Finder</title>
+    <link rel="stylesheet" href="popup.css"></style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header fade-in">
+            <h1 class="title">Welcome to Hackify</h1>
+            <p class="subtitle">Find all hackathons in one place</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-container fade-in" style="animation-delay: 0.1s;">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <input 
+                type="text" 
+                id="locationInput" 
+                placeholder="Enter City or State" 
+                class="input"
+            />
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-container fade-in" style="animation-delay: 0.2s;">
+            <button id="filterHackathons" class="button button-primary">
+                Filter by Location
+            </button>
+            <button id="fetchHackathons" class="button button-secondary">
+                Fetch All
+            </button>
+        </div>
+
+        <!-- Stats Section -->
+        <div id="stats" class="stats fade-in" style="animation-delay: 0.3s;">
+            <span>Total Hackathons: <span class="stat-value">0</span></span>
+            <span>Active: <span class="stat-value">0</span></span>
+        </div>
+
+        <!-- Hackathon List -->
+        <div id="hackathonList" class="hackathon-list">
+            
+            </div>
+        <div class="email-subscription fade-in" style="animation-delay: 0.4s;">
+    <input 
+        type="email" 
+        id="emailInput" 
+        placeholder="Enter email for notifications" 
+        class="input"
+    />
+    <button id="subscribeButton" class="button button-primary">
+        Subscribe
+    </button>
+    <p class="subscription-status"></p>
+</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

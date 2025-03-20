@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Hackathon Scraper",
+    "version": "1.0",
+    "description": "Scrapes different websites and displays hackathons in the extension.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://localhost:3000/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png"
+        }
+    }
+}
